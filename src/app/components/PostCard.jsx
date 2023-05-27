@@ -1,5 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
+'use client'
+import Image from 'next/image'
+
 import kos from '../../../public/dummy/kos.jpg'
 
 const PostCard = ({props}) => {
@@ -23,7 +24,7 @@ const PostCard = ({props}) => {
       <Image src={toDisp()} width={150} height={150} alt="title" />
       <div className='p-4'>
         <h5 className='text-gray-600 text-sm'>{ date.toDateString() }</h5>
-        <Link href={`/allposts/${slug}`}><h2 className='text-lg font-bold hover:cursor-pointer'>{ title }</h2></Link>
+        <a href={`/allposts/${slug}`}><h2 className='text-lg font-bold hover:cursor-pointer'>{ title }</h2></a>
         <p className='text-gray-600'>{ excerpt }</p>
         <div className='flex justify-between'>
         {

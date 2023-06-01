@@ -1,11 +1,10 @@
-'use server'
-
-
 import PostCard from "../components/PostCard"
 import { getAllPosts } from "@/firebase/firebase"
 
+export const revalidate = 0;
+
 export default async function AllPosts() {
-  const postMap = await getAllPosts({cache: 'no-store'})
+  const postMap = await getAllPosts()
   return (
 
     <div className='grid lg:grid-cols-4 sm:grid-cols-1'>

@@ -2,6 +2,9 @@
 const nextConfig = {
   images: {
     domains: ['placekitten.com', 'firebasestorage.googleapis.com']
+  },
+  experimental: {
+    serverActions: true
   }
 }
 

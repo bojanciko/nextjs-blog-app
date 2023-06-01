@@ -1,3 +1,6 @@
+'use server'
+
+
 import PostCard from "../components/PostCard"
 import { getAllPosts } from "@/firebase/firebase"
 
